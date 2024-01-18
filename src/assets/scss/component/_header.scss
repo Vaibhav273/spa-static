@@ -1,0 +1,43 @@
+.top-bg-color {
+  background-color: $primaryColor;
+
+  .navbar {
+    padding: 0;
+
+    .navbar-brand {
+      background-color: $white;
+
+      img {
+        width: 150px;
+      }
+    }
+
+    .navbar-toggler{
+      border-color: $white;
+      border-radius: 0;
+      .navbar-toggler-icon{
+        filter: invert(1);
+      }
+    }
+    .nav-link {
+      padding: 1.2rem 1rem;
+      color: $white;
+      font-size: 1.25rem;
+      margin-right: 1.3rem;
+      font-weight: 700;
+      font-family: $fontMontserrat;
+
+      &.active {
+        color: rgba($color: $white, $alpha: 0.7);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: rgba($color: $white, $alpha: 0.7);
+      }
+    }
+  }
+}
