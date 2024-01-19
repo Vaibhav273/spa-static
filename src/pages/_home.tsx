@@ -11,7 +11,7 @@ import spSCImage2 from "../assets/images/sp-image-2.png";
 // import spSCImage3 from "../assets/images/sp-image-3.png";
 
 import globalImage from "../assets/images/global.png";
-import globeTextBg from "../assets/images/globe-text-bg.png";
+// import globeTextBg from "../assets/images/globe-text-bg.png";
 
 import storyImage from "../assets/images/story-image.png";
 import storyTextBottom from "../assets/images/text-bottom-vector.png";
