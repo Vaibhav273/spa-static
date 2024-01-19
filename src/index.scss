@@ -14,3 +14,23 @@
 body {
   background-color: $bgColor;
 }
+
+.slider-testimonial {
+  .slick-arrow {
+    top: auto;
+    bottom: -20px;
+
+    &.slick-prev{
+      left: auto;
+      right: 70px;
+    }
+
+    &.slick-next{
+      right: 20px;
+    }
+
+    &:before{
+      font-size: 40px;
+    }
+  }
+}

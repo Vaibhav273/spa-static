@@ -33,17 +33,28 @@ import footerTopImage from "../assets/images/footer-top.png";
 import { IoCheckmark } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
+import Slider from "react-slick";
 
 function HomeScreen() {
-
+    const settingTestimonial = {
+        dots: false,
+        infinite: true,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 5000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        pauseOnHover: true,
+        arrows: true,
+    }
     return (
         <>
             <Col xl={12} className="top-slider-section">
                 <Col xl={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }} md={12}>
                     <Row>
                         <Col xl={4} lg={6} md={12} className="left-side-content">
-                            <h4>A whole <span>new world,</span> a whole body care</h4>
-                            <Image src={globeTextBg} alt="right" className="img-fluid text-bg" />
+                            <h4>A whole <span>new world,</span> a whole foot care</h4>
+                            {/* <Image src={globeTextBg} alt="right" className="img-fluid text-bg" /> */}
                             <p>Immerse yourself in a world of serenity and pampering, where every detail is designed to enhance your well-being and elevate your senses.</p>
                             <Link to="" className="btn btn-custom">Book an appointment today <MdOutlineArrowRightAlt /></Link>
                         </Col>
@@ -82,7 +93,7 @@ function HomeScreen() {
                 <Row>
                     <Col md={12} className="title">
                         <h3>Special Service from Relaxation Arena</h3>
-                        <p> helping you reconnect with your body, mind, and spirit.  Each treatment is a testament to our commitment to excellence, ensuring that every guest receives a personalized experience tailored to their unique needs.</p>
+                        <p> helping you reconnect with your foot, mind, and spirit.  Each treatment is a testament to our commitment to excellence, ensuring that every guest receives a personalized experience tailored to their unique needs.</p>
                     </Col>
                     <Col xl={{ span: 8, offset: 2 }} lg={{ span: 10, offset: 1 }} md={12}>
                         <Row>
@@ -91,7 +102,7 @@ function HomeScreen() {
                                 <Col xl={12} className="px-4">
                                     <div className="content-text">
                                         <h5>Foot Massage</h5>
-                                        <p>A haven where body meets renewal in foot therapy delight. A sanctuary merging luxury and ultimate renewal.</p>
+                                        <p>A haven where foot meets renewal in foot massage delight. A sanctuary merging luxury and ultimate renewal.</p>
                                         <Link to="">Book Today <MdOutlineArrowRightAlt /></Link>
                                     </div>
                                 </Col>
@@ -129,7 +140,7 @@ function HomeScreen() {
                     <Col lg={8} className="position-relative global-content">
                         <div className="title">
                             <h4>Find us accross the Globe</h4>
-                            <Image src={globeTextBg} alt="right" className="img-fluid text-bg" />
+                            {/* <Image src={globeTextBg} alt="right" className="img-fluid text-bg" /> */}
                             <p className="mb-5">Our perfect craftsmanship of ancient therapies perfectly blended with the modern technology is serving the world today.</p>
                         </div>
                         <Row>
@@ -195,16 +206,28 @@ function HomeScreen() {
 
             <Col xl={12} className="customer-say-section">
                 <Row>
-                    <Col xl={6}>
+                    <Col xl={6} className="d-flex flex-column justify-content-center">
                         <div className="slider-testimonial">
                             <h4>Here's what our customers say</h4>
                             <Image src={storyTextBottom1} alt="right-bottom" className="img-fluid text-bottom" />
 
-                            <div className="slider-text">
-                                <p>“Had an amazing experience at Relaxation arena, beautiful place, great service, this is the place I move to for weekend relaxation.”</p>
-                                <h5>Swadha Mittal</h5>
-                                <h6>Customer</h6>
-                            </div>
+                            <Slider {...settingTestimonial}>
+                                <div className="slider-text">
+                                    <p>“Had an amazing experience at Relaxation arena, beautiful place, great service, this is the place I move to for weekend relaxation.”</p>
+                                    <h5>Swadha Mittal</h5>
+                                    <h6>Customer</h6>
+                                </div>
+                                <div className="slider-text">
+                                    <p>“Enjoyed my foot massage here after my family trip, must say was the most relaxing hour of my journey.”</p>
+                                    <h5>Sumedh Agarwal</h5>
+                                    <h6>Customer</h6>
+                                </div>
+                                <div className="slider-text">
+                                    <p>“Relaxation Arena is beautiful place to relax with professional massage providers and beautiful ambience. Trusted by my whole family. Highly recommended for everyone.”</p>
+                                    <h5>Sarfaraaz</h5>
+                                    <h6>Customer</h6>
+                                </div>
+                            </Slider>
                         </div>
                         <Image src={ifoLBottom} alt="right-bottom" className="img-fluid right-bottom" />
                     </Col>
@@ -222,15 +245,15 @@ function HomeScreen() {
                         <Image src={expertImage1} alt="right-bottom" className="img-fluid" />
                     </Col>
                     <Col xl={6} className="expert-content">
-                        <h4>Expert Body care for Your Beautiful Souls</h4>
+                        <h4>Expert Foot care for Your Beautiful Souls</h4>
                         <Image src={expertTextImage} alt="right-bottom" className="img-fluid" />
                         <p>We want our guests to feel a sense of escape from the outside world the moment they step through our doors.</p>
                         <ul>
                             <li><IoCheckmark /> Skilled therapy and experts.</li>
                             <li><IoCheckmark /> Finest natural ingredients.</li>
-                            <li><IoCheckmark /> Discover Signature rituals</li>
-                            <li><IoCheckmark /> ancient healing practices. </li>
-                            <li><IoCheckmark /> modern therapeutic techniques</li>
+                            <li><IoCheckmark /> Discover signature rituals</li>
+                            <li><IoCheckmark /> Ancient healing practices. </li>
+                            <li><IoCheckmark /> Modern therapeutic techniques</li>
                         </ul>
 
                         <Link to="" className="btn btn-custom">Discover More <MdOutlineArrowRightAlt /></Link>
