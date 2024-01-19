@@ -27,6 +27,8 @@ import slider1 from "../assets/images/top-slider-1.png";
 import slider2 from "../assets/images/top-slider-2.png";
 import slider3 from "../assets/images/top-slider-3.png";
 
+import comingSoon from "../assets/images/coming-soon.png";
+
 import footerTopImage from "../assets/images/footer-top.png";
 import { IoCheckmark } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -82,27 +84,31 @@ function HomeScreen() {
                         <h3>Special Service from Relaxation Arena</h3>
                         <p> helping you reconnect with your body, mind, and spirit.  Each treatment is a testament to our commitment to excellence, ensuring that every guest receives a personalized experience tailored to their unique needs.</p>
                     </Col>
-                    <Col xl={4} className="content">
-                        <Image src={spSCImage1} alt="left" className="img-fluid" />
-                        <Col xl={12} className="px-4">
-                            <div className="content-text">
-                                <h5>Foot Massage</h5>
-                                <p>A haven where body meets renewal in foot therapy delight. A sanctuary merging luxury and ultimate renewal.</p>
-                                <Link to="">Book Today <MdOutlineArrowRightAlt /></Link>
-                            </div>
-                        </Col>
+                    <Col xl={{ span: 8, offset: 2 }} lg={{ span: 10, offset: 1 }} md={12}>
+                        <Row>
+                            <Col xl={6} className="content">
+                                <Image src={spSCImage1} alt="left" className="img-fluid" />
+                                <Col xl={12} className="px-4">
+                                    <div className="content-text">
+                                        <h5>Foot Massage</h5>
+                                        <p>A haven where body meets renewal in foot therapy delight. A sanctuary merging luxury and ultimate renewal.</p>
+                                        <Link to="">Book Today <MdOutlineArrowRightAlt /></Link>
+                                    </div>
+                                </Col>
+                            </Col>
+                            <Col xl={6} className="content">
+                                <Image src={spSCImage2} alt="left" className="img-fluid" />
+                                <Col xl={12} className="px-4">
+                                    <div className="content-text">
+                                        <h5>Head Massage</h5>
+                                        <p>Lavish head massage sanctuary offering opulence, tranquility, and personalized rejuvenation bliss.</p>
+                                        <Link to="">Book Today <MdOutlineArrowRightAlt /></Link>
+                                    </div>
+                                </Col>
+                            </Col>
+                        </Row>
                     </Col>
-                    <Col xl={4} className="content">
-                        <Image src={spSCImage2} alt="left" className="img-fluid" />
-                        <Col xl={12} className="px-4">
-                            <div className="content-text">
-                                <h5>Head Massage</h5>
-                                <p>Lavish head massage sanctuary offering opulence, tranquility, and personalized rejuvenation bliss.</p>
-                                <Link to="">Book Today <MdOutlineArrowRightAlt /></Link>
-                            </div>
-                        </Col>
-                    </Col>
-                    <Col xl={4} className="content">
+                    {/* <Col xl={4} className="content">
                         <Image src={spSCImage3} alt="right" className="img-fluid" />
                         <Col xl={12} className="px-4">
                             <div className="content-text">
@@ -111,7 +117,7 @@ function HomeScreen() {
                                 <Link to="">Book Today <MdOutlineArrowRightAlt /></Link>
                             </div>
                         </Col>
-                    </Col>
+                    </Col> */}
                 </Row>
             </Col>
 
@@ -127,7 +133,8 @@ function HomeScreen() {
                             <p className="mb-5">Our perfect craftsmanship of ancient therapies perfectly blended with the modern technology is serving the world today.</p>
                         </div>
                         <Row>
-                            <Col xl={2}>
+                            <Col xl={2} className="position-relative">
+                                <Image src={comingSoon} className="img-fluid coming-soon-image" alt="Coming Soon" />
                                 <p>DUBAI</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
@@ -194,8 +201,8 @@ function HomeScreen() {
                             <Image src={storyTextBottom1} alt="right-bottom" className="img-fluid text-bottom" />
 
                             <div className="slider-text">
-                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis erat posuere, tincidunt sem at, sagittis dolor. Sed malesuada orci erat, ut interdum lorem rhoncus eu. Donec justo urna, mattis non maximus.”</p>
-                                <h5>Akash Gupta</h5>
+                                <p>“Had an amazing experience at Relaxation arena, beautiful place, great service, this is the place I move to for weekend relaxation.”</p>
+                                <h5>Swadha Mittal</h5>
                                 <h6>Customer</h6>
                             </div>
                         </div>
