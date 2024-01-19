@@ -8,7 +8,7 @@ import ifoRBottom from "../assets/images/ifo-right-bottom.png";
 
 import spSCImage1 from "../assets/images/sp-image-1.png";
 import spSCImage2 from "../assets/images/sp-image-2.png";
-import spSCImage3 from "../assets/images/sp-image-3.png";
+// import spSCImage3 from "../assets/images/sp-image-3.png";
 
 import globalImage from "../assets/images/global.png";
 import globeTextBg from "../assets/images/globe-text-bg.png";
