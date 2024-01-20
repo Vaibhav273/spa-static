@@ -25,7 +25,6 @@ import expertTextImage from "../assets/images/export-text-bg.png";
 
 import slider1 from "../assets/images/top-slider-1.png";
 import slider2 from "../assets/images/top-slider-2.png";
-import slider3 from "../assets/images/top-slider-3.png";
 
 import comingSoon from "../assets/images/coming-soon.png";
 
@@ -47,24 +46,76 @@ function HomeScreen() {
         pauseOnHover: true,
         arrows: true,
     }
+
+    const topSlider = {
+        dots: false,
+        infinite: true,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 5000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        pauseOnHover: true,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    }
     return (
         <>
             <Col xl={12} className="top-slider-section">
-                <Col xl={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }} md={12}>
+                <Col xl={12} lg={12} md={12}>
                     <Row>
-                        <Col xl={4} lg={6} md={12} className="left-side-content">
+                        <Col xl={1} lg={1} md={12}></Col>
+                        <Col xl={4} lg={4} md={12} className="left-side-content">
                             <h4>A whole <span>new world,</span> a whole foot care</h4>
                             {/* <Image src={globeTextBg} alt="right" className="img-fluid text-bg" /> */}
                             <p>Immerse yourself in a world of serenity and pampering, where every detail is designed to enhance your well-being and elevate your senses.</p>
                             <Link to="" className="btn btn-custom">Book an appointment today <MdOutlineArrowRightAlt /></Link>
                         </Col>
-                        <Col xl={8} lg={6} md={12} className="side-slider-image">
-                            <Col lg={12} className="slider-images">
+                        <Col xl={7} lg={7} md={12} className="side-slider-image">
+                            <Slider {...topSlider}>
+                                <div className="slider-images">
+                                    <Image src={slider1} className="img-fluid" alt="Slider" />
+                                </div>
+                                <div className="slider-images">
+                                    <Image src={slider2} className="img-fluid" alt="Slider" />
+                                </div>
+                                <div className="slider-images">
+                                    <Image src={slider1} className="img-fluid" alt="Slider" />
+                                </div>
+                                <div className="slider-images">
+                                    <Image src={slider2} className="img-fluid" alt="Slider" />
+                                </div>
+                            </Slider>
+                            {/* <Col lg={12} className="slider-images">
                                 <Image src={slider1} className="img-fluid" alt="Slider" />
                                 <Image src={slider2} className="img-fluid" alt="Slider" />
                                 <Image src={slider1} className="img-fluid" alt="Slider" />
-                                <Image src={slider3} className="img-fluid" alt="Slider" />
-                            </Col>
+                            </Col>*/}
                             <Image src={ifoLBottom} alt="right-bottom" className="img-fluid top-left" />
                             <Image src={ifoLBottom} alt="right-bottom" className="img-fluid bottom-left" />
                         </Col>
@@ -73,16 +124,16 @@ function HomeScreen() {
             </Col>
             <Col xl={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }} md={12} className="ifo-section">
                 <Row>
-                    <Col xl={3} className="position-relative">
+                    <Col xl={3} lg={3} className="position-relative d-flex flex-column align-items-center">
                         <Image src={ifoLeft} alt="left" className="img-fluid" />
                         <Image src={ifoLBottom} alt="left-top" className="img-fluid top-left" />
                     </Col>
-                    <Col xl={6} className="content">
+                    <Col xl={6} lg={6} className="content">
                         <h6>Alive every moment</h6>
                         <h4>India's First Open Foot Massage Centre</h4>
                         <p>Welcome to Relaxation Arena, where indulgence meets rejuvenation, and self-care is elevated to an art form.</p>
                     </Col>
-                    <Col xl={3} className="position-relative">
+                    <Col xl={3} lg={3} className="position-relative d-flex flex-column align-items-center">
                         <Image src={ifoRight} alt="right" className="img-fluid" />
                         <Image src={ifoRBottom} alt="right-bottom" className="img-fluid right-bottom" />
                     </Col>
@@ -95,9 +146,9 @@ function HomeScreen() {
                         <h3>Special Service from Relaxation Arena</h3>
                         <p> helping you reconnect with your foot, mind, and spirit.  Each treatment is a testament to our commitment to excellence, ensuring that every guest receives a personalized experience tailored to their unique needs.</p>
                     </Col>
-                    <Col xl={{ span: 8, offset: 2 }} lg={{ span: 10, offset: 1 }} md={12}>
+                    <Col xl={{ span: 8, offset: 2 }} lg={12} md={12}>
                         <Row>
-                            <Col xl={6} className="content">
+                            <Col xl={6} lg={6} className="content">
                                 <Image src={spSCImage1} alt="left" className="img-fluid" />
                                 <Col xl={12} className="px-4">
                                     <div className="content-text">
@@ -107,7 +158,7 @@ function HomeScreen() {
                                     </div>
                                 </Col>
                             </Col>
-                            <Col xl={6} className="content">
+                            <Col xl={6} lg={6} className="content">
                                 <Image src={spSCImage2} alt="left" className="img-fluid" />
                                 <Col xl={12} className="px-4">
                                     <div className="content-text">
@@ -134,7 +185,7 @@ function HomeScreen() {
 
             <Col xl={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }} md={12} className="global-section">
                 <Row>
-                    <Col lg={4} className="position-relative">
+                    <Col lg={4} className="position-relative d-flex flex-column align-items-center">
                         <Image src={globalImage} alt="right" className="img-fluid" />
                     </Col>
                     <Col lg={8} className="position-relative global-content">
@@ -144,28 +195,28 @@ function HomeScreen() {
                             <p className="mb-5">Our perfect craftsmanship of ancient therapies perfectly blended with the modern technology is serving the world today.</p>
                         </div>
                         <Row>
-                            <Col xl={2} className="position-relative">
+                            <Col xl={2} lg={4} className="position-relative">
                                 <Image src={comingSoon} className="img-fluid coming-soon-image" alt="Coming Soon" />
                                 <p>DUBAI</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2}>
+                            <Col xl={2} lg={4}>
                                 <p>DELHI</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2}>
+                            <Col xl={2} lg={4}>
                                 <p>UDAIPUR</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2}>
+                            <Col xl={2} lg={4}>
                                 <p>RAIPUR</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2}>
+                            <Col xl={2} lg={4}>
                                 <p>BILASPUR</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2}>
+                            <Col xl={2} lg={4}>
                                 <p>BHILAI</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>

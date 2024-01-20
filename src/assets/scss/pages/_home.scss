@@ -5,7 +5,7 @@
   position: relative;
 
   .left-side-content {
-    padding: 5rem 2rem 4rem 0;
+    padding: 5rem 8rem 4rem 0;
     h4 {
       font-size: 4rem;
       font-family: $fontCormorant;
@@ -48,17 +48,12 @@
   }
 
   .side-slider-image {
-    .slider-images {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      position: relative;
-      right: -96px;
+    padding-left: 2rem;
+    padding-right: 0;
+    padding-bottom: 6rem;
 
-      img {
-        margin-left: 2.2rem;
-        height: 500px;
-      }
+    .slider-images {
+      padding: 0 0.7rem 0 0.9rem;
     }
 
     .top-left {
@@ -66,7 +61,7 @@
       bottom: 4rem;
       transform: rotate(201deg);
       width: 200px;
-      margin-left: 2rem;
+      margin-left: -5rem;
     }
     .bottom-left {
       position: absolute;

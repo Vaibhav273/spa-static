@@ -20,17 +20,41 @@ body {
     top: auto;
     bottom: -20px;
 
-    &.slick-prev{
+    &.slick-prev {
       left: auto;
       right: 70px;
     }
 
-    &.slick-next{
+    &.slick-next {
       right: 20px;
     }
 
-    &:before{
+    &:before {
       font-size: 40px;
     }
   }
 }
+
+.side-slider-image {
+  .slick-arrow {
+    top: auto;
+    bottom: -20px;
+    z-index: 1;
+
+    &.slick-prev {
+      left: 0;
+    }
+
+    &.slick-next {
+      left: 50px;
+      right: auto;
+    }
+
+    &:before {
+      font-size: 40px;
+    }
+  }
+}
+
+
+@import "./assets/scss/responsive";
