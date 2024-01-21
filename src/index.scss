@@ -9,7 +9,11 @@
 @import "./assets/scss/variable";
 @import "./assets/scss/component/header";
 @import "./assets/scss/component/footer";
+@import "./assets/scss/component/breadcrumb";
 @import "./assets/scss/pages/home";
+@import "./assets/scss/pages/about";
+@import "./assets/scss/pages/services";
+@import "./assets/scss/pages/contact";
 
 body {
   background-color: $bgColor;
@@ -56,5 +60,25 @@ body {
   }
 }
 
+.contact-slider {
+  .slick-arrow {
+    top: auto;
+    bottom: -2rem;
+    z-index: 1;
+
+    &.slick-prev {
+      left: 45%;
+    }
+
+    &.slick-next {
+      right: 45%;
+    }
+
+    &:before {
+      color: $primaryColor;
+      font-size: 40px;
+    }
+  }
+}
 
 @import "./assets/scss/responsive";

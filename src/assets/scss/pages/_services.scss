@@ -1,0 +1,100 @@
+.service-services {
+  background-color: $primaryColor;
+
+  .title {
+    h3 {
+      color: $white;
+    }
+    p {
+      color: $white;
+    }
+  }
+}
+
+.membership-section {
+  position: relative;
+  padding: 5rem 15px 4rem;
+
+  .form-section {
+    position: relative;
+    background-color: $primaryColor;
+    padding: 5rem 3rem 4rem;
+    input {
+      background-color: transparent;
+      border: 2px solid $white;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      font-family: $fontMontserrat;
+      font-weight: 500;
+
+      &::placeholder {
+        color: $white;
+      }
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+
+    .btn-primary {
+      background-color: $white;
+      color: $primaryColor;
+      font-family: $fontMontserrat;
+      font-weight: 500;
+      border-radius: 2rem;
+      font-size: 1.1rem;
+      padding: 0.7rem 2.5rem;
+      margin-top: 1.5rem;
+      border: 0;
+
+      svg {
+        font-size: 2rem;
+      }
+    }
+
+    img {
+      width: 200px;
+      position: absolute;
+
+      &.top-left {
+        left: -3rem;
+        top: -4rem;
+        transform: rotate(352deg);
+      }
+      &.right-bottom {
+        right: -3rem;
+        bottom: -3rem;
+        transform: rotate(160deg);
+      }
+    }
+  }
+
+  h4 {
+    font-size: 4rem;
+    font-family: $fontCormorant;
+    color: $primaryColor;
+    margin-bottom: 2rem;
+  }
+  p {
+    font-family: $fontMontserrat;
+    font-weight: 500;
+    font-size: 1rem;
+    color: $textColor;
+  }
+
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+      margin-bottom: 0.8rem;
+      font-family: $fontMontserrat;
+      font-weight: 500;
+      font-size: 1rem;
+      color: $textColor;
+
+      svg {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

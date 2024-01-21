@@ -5,7 +5,7 @@ function Footer() {
     return (
         <>
             <div className="footer">
-                <Col xl={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }} md={12}>
+                <Col xl={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }} md={12} className="p-0">
                     <Row>
                         <Col xl={5} className="footer-content">
                             <Image src={logo} className="img-fluid" alt="Logo" />

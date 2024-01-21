@@ -1,0 +1,107 @@
+.about-ifo-section{
+    padding-bottom: 5rem;
+}
+
+.about-service-story {
+  background-color: $primaryColor;
+  .title {
+    h3 {
+      color: $white;
+    }
+    p {
+      color: $white;
+    }
+  }
+
+  .story-section {
+    .top-left {
+      left: auto;
+      right: 0;
+      filter: invert(1);
+      transform: rotate(230deg);
+    }
+    .story-text {
+      background-color: $white;
+      margin-left: auto;
+      position: relative;
+      right: -5rem;
+
+      h3 {
+        color: $primaryColor;
+      }
+      p {
+        color: $primaryColor;
+      }
+
+      .btn-custom {
+        background-color: $primaryColor;
+        color: $white;
+      }
+    }
+    .count-text {
+      .reach-text {
+        h4 {
+          color: $white;
+        }
+        p {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.specialist-section {
+  padding: 5rem 15px 4rem;
+
+  .content {
+    text-align: center;
+    h4 {
+      font-size: 4rem;
+      font-family: $fontCormorant;
+      color: $primaryColor;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-family: $fontMontserrat;
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: $textColor;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .content-text {
+    background-color: $white;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    margin-top: -1.5rem;
+
+    h5 {
+      font-size: 2rem;
+      font-family: $fontCormorant;
+      color: $primaryColor;
+    }
+    p {
+      font-family: $fontMontserrat;
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: $textColor;
+    }
+    a {
+      color: $anchorTextColor;
+      font-family: $fontMontserrat;
+      font-weight: 500;
+      font-size: 1rem;
+      text-decoration: none;
+      border-bottom: 1px solid $anchorTextColor;
+      padding: 5px 1rem;
+
+      svg {
+        font-size: 2rem;
+      }
+    }
+  }
+}
