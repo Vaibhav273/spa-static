@@ -6,8 +6,9 @@
 
   .left-side-content {
     padding: 5rem 8rem 4rem 0;
+
     h4 {
-      font-size: 4rem;
+      font-size: 3rem;
       font-family: $fontCormorant;
       color: $white;
       margin-bottom: 2rem;
@@ -18,11 +19,13 @@
         font-weight: 300;
       }
     }
+
     .text-bg {
       position: absolute;
       top: 110px;
       margin-left: 45px;
     }
+
     p {
       font-family: $fontMontserrat;
       font-weight: 500;
@@ -50,19 +53,21 @@
   .side-slider-image {
     padding-left: 2rem;
     padding-right: 0;
-    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .slider-images {
       padding: 0 0.7rem 0 0.9rem;
     }
 
     .top-left {
-      position: absolute;
-      bottom: 4rem;
+      margin-left: -5rem;
+      margin-top: -4rem;
       transform: rotate(201deg);
       width: 200px;
-      margin-left: -5rem;
     }
+
     .bottom-left {
       position: absolute;
       bottom: -3rem;
@@ -84,10 +89,11 @@
     padding: 0 7rem;
 
     h4 {
-      font-size: 4rem;
+      font-size: 3rem;
       font-family: $fontCormorant;
       color: $primaryColor;
     }
+
     h6 {
       font-family: $fontMontserrat;
       font-weight: 500;
@@ -95,6 +101,7 @@
       color: $primaryColor;
       margin-bottom: 8px;
     }
+
     p {
       font-family: $fontMontserrat;
       font-weight: 500;
@@ -110,6 +117,7 @@
     left: 0;
     width: 230px;
   }
+
   .right-bottom {
     position: absolute;
     bottom: -60px;
@@ -125,10 +133,11 @@
     text-align: center;
 
     h3 {
-      font-size: 4rem;
+      font-size: 3rem;
       font-family: $fontCormorant;
       color: $primaryColor;
     }
+
     p {
       font-family: $fontMontserrat;
       font-weight: 500;
@@ -143,6 +152,7 @@
     img {
       width: 100%;
     }
+
     .content-text {
       background-color: $white;
       text-align: center;
@@ -155,12 +165,14 @@
         font-family: $fontCormorant;
         color: $primaryColor;
       }
+
       p {
         font-family: $fontMontserrat;
         font-weight: 500;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: $textColor;
       }
+
       a {
         color: $anchorTextColor;
         font-family: $fontMontserrat;
@@ -186,6 +198,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
     .title {
       img {
         position: absolute;
@@ -194,12 +207,14 @@
         width: 300px;
       }
     }
+
     h4 {
-      font-size: 4rem;
+      font-size: 3rem;
       font-family: $fontCormorant;
       color: $primaryColor;
       margin-bottom: 1.5rem;
     }
+
     p {
       font-family: $fontMontserrat;
       font-weight: 500;
@@ -207,12 +222,13 @@
       color: $black;
       margin-top: 0.8rem;
     }
+
     a {
       color: $textColor;
       text-decoration: none;
       font-family: $fontMontserrat;
       font-weight: 600;
-      padding: 0 1rem 0.3rem;
+      padding: 0 0.2rem 0.3rem;
       border-bottom: 2px solid $textColor;
 
       svg {
@@ -230,32 +246,40 @@
 .story-section {
   padding: 5rem 15px 3rem;
 
+  .story-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    left: -5rem;
+    top: -3rem;
+  }
+
   .story-text {
     background-color: $primaryColor;
-    padding: 2rem 5rem 3rem;
-    margin-top: 16rem;
-    margin-left: -7rem;
+    padding: 2rem 2.5rem;
     z-index: 1;
 
     .text-bottom {
       position: relative;
-      top: -30px;
-      right: -118px;
+      top: -20px;
+      right: -55px;
       width: 150px;
     }
 
     h3 {
-      font-size: 4rem;
+      font-size: 3rem;
       font-family: $fontCormorant;
       color: $white;
     }
+
     p {
       font-family: $fontMontserrat;
       font-weight: 500;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: $white;
       margin-top: 0.8rem;
     }
+
     .btn-custom {
       background-color: $white;
       color: $primaryColor;
@@ -275,14 +299,16 @@
   .count-text {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 5rem;
+    position: relative;
+    // top: 10rem;
 
     .reach-text {
       h4 {
-        font-size: 4rem;
+        font-size: 3rem;
         font-family: $fontCormorant;
         color: $primaryColor;
       }
+
       p {
         font-family: $fontMontserrat;
         font-weight: 500;
@@ -294,15 +320,18 @@
 
   .top-left {
     position: absolute;
-    left: 0;
+    left: 5rem;
     transform: rotate(175deg);
     top: 1rem;
+    width: 200px;
   }
 
   .right-bottom {
     position: absolute;
     right: -2rem;
-    transform: rotate(180deg);
+    bottom: 5.6rem;
+    transform: rotate(160deg);
+    width: 200px;
   }
 }
 
@@ -319,7 +348,7 @@
     padding: 0 10rem;
 
     h4 {
-      font-size: 4rem;
+      font-size: 3rem;
       font-family: $fontCormorant;
       color: $white;
     }
@@ -346,6 +375,7 @@
         color: $white;
         margin-top: 2rem;
       }
+
       h6 {
         font-family: $fontMontserrat;
         font-weight: 500;
@@ -381,6 +411,7 @@
       width: 250px;
     }
   }
+
   .expert-content {
     display: flex;
     flex-direction: column;
@@ -389,11 +420,12 @@
     padding: 0 5rem;
 
     h4 {
-      font-size: 4rem;
+      font-size: 3rem;
       font-family: $fontCormorant;
       color: $primaryColor;
       margin-bottom: 2rem;
     }
+
     p {
       font-family: $fontMontserrat;
       font-weight: 500;
@@ -409,6 +441,7 @@
 
     ul {
       padding-left: 0;
+
       li {
         list-style: none;
         margin-bottom: 0.8rem;
@@ -458,7 +491,7 @@
     padding: 0 10rem;
 
     h4 {
-      font-size: 4rem;
+      font-size: 3rem;
       font-family: $fontCormorant;
       color: $white;
     }
@@ -487,11 +520,13 @@
       }
     }
   }
+
   .top-left {
     position: absolute;
     top: -7rem;
     left: -90px;
   }
+
   .right-bottom {
     position: absolute;
     bottom: -5rem;

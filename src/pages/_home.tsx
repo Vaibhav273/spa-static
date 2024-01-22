@@ -148,7 +148,7 @@ function HomeScreen() {
                     </Col>
                     <Col xl={{ span: 8, offset: 2 }} lg={12} md={12}>
                         <Row>
-                            <Col xl={6} lg={6} className="content">
+                            <Col xl={6} lg={6} md={6} className="content">
                                 <Image src={spSCImage1} alt="left" className="img-fluid" />
                                 <Col xl={12} className="px-4">
                                     <div className="content-text">
@@ -158,7 +158,7 @@ function HomeScreen() {
                                     </div>
                                 </Col>
                             </Col>
-                            <Col xl={6} lg={6} className="content">
+                            <Col xl={6} lg={6} md={6} className="content">
                                 <Image src={spSCImage2} alt="left" className="img-fluid" />
                                 <Col xl={12} className="px-4">
                                     <div className="content-text">
@@ -195,28 +195,28 @@ function HomeScreen() {
                             <p className="mb-5">Our perfect craftsmanship of ancient therapies perfectly blended with the modern technology is serving the world today.</p>
                         </div>
                         <Row>
-                            <Col xl={2} lg={4} className="position-relative">
+                            <Col xl={2} lg={4} md={3} className="position-relative">
                                 <Image src={comingSoon} className="img-fluid coming-soon-image" alt="Coming Soon" />
                                 <p>DUBAI</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2} lg={4}>
+                            <Col xl={2} lg={4} md={3}>
                                 <p>DELHI</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2} lg={4}>
+                            <Col xl={2} lg={4} md={3}>
                                 <p>UDAIPUR</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2} lg={4}>
+                            <Col xl={2} lg={4} md={3}>
                                 <p>RAIPUR</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2} lg={4}>
+                            <Col xl={2} lg={4} md={3}>
                                 <p>BILASPUR</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2} lg={4}>
+                            <Col xl={2} lg={4} md={3}>
                                 <p>BHILAI</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
@@ -225,13 +225,13 @@ function HomeScreen() {
                 </Row>
             </Col>
 
-            <Col xl={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }} md={12} className="story-section">
+            <Col xl={{ span: 10, offset: 1 }} lg={12} md={12} className="story-section">
                 <Row>
-                    <Col lg={7} className="position-relative">
+                    <Col xl={7} lg={6} md={12} className="position-relative">
                         <Image src={storyImage} alt="right" className="img-fluid" />
                         <Image src={ifoRBottom} alt="left-top" className="img-fluid top-left" />
                     </Col>
-                    <Col lg={5} className="position-relative">
+                    <Col xl={5} lg={6} md={12} className="story-content position-relative">
                         <div className="story-text">
                             <h3>Our Story</h3>
                             <Image src={storyTextBottom} alt="right-bottom" className="img-fluid text-bottom" />
@@ -257,7 +257,7 @@ function HomeScreen() {
 
             <Col xl={12} className="customer-say-section">
                 <Row>
-                    <Col xl={6} className="d-flex flex-column justify-content-center">
+                    <Col xl={6} lg={6} className="d-flex flex-column justify-content-center">
                         <div className="slider-testimonial">
                             <h4>Here's what our customers say</h4>
                             <Image src={storyTextBottom1} alt="right-bottom" className="img-fluid text-bottom" />
@@ -282,22 +282,22 @@ function HomeScreen() {
                         </div>
                         <Image src={ifoLBottom} alt="right-bottom" className="img-fluid right-bottom" />
                     </Col>
-                    <Col xl={6} className="p-0">
+                    <Col xl={6} lg={6} className="p-0">
                         <Image src={customerImage} alt="Customer Image" className="img-fluid" />
                     </Col>
                 </Row>
             </Col>
 
-            <Col xl={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }} md={12} className="expert-section">
+            <Col xl={{ span: 10, offset: 1 }} lg={12} md={12} className="expert-section">
                 <Row>
-                    <Col xl={6} className="expert-images">
+                    <Col xl={6} lg={6} className="expert-images">
                         <Image src={ifoRBottom} alt="left-top" className="img-fluid top-left" />
                         <Image src={expertImage} alt="right-bottom" className="img-fluid" />
                         <Image src={expertImage1} alt="right-bottom" className="img-fluid" />
                     </Col>
-                    <Col xl={6} className="expert-content">
+                    <Col xl={6} lg={6} className="expert-content">
                         <h4>Expert Foot care for Your Beautiful Souls</h4>
-                        <Image src={expertTextImage} alt="right-bottom" className="img-fluid" />
+                        {/* <Image src={expertTextImage} alt="right-bottom" className="img-fluid" /> */}
                         <p>We want our guests to feel a sense of escape from the outside world the moment they step through our doors.</p>
                         <ul>
                             <li><IoCheckmark /> Skilled therapy and experts.</li>
@@ -314,7 +314,7 @@ function HomeScreen() {
 
             <Col xl={12} className="visit-section">
                 <Row>
-                    <Col xl={6}>
+                    <Col xl={6} lg={6}>
                         <div className="slider-testimonial">
                             <h4>Visit Our Centre and explore the best of you</h4>
                             <p>The design of our spa reflects our desire to provide a serene and inviting atmosphere. From the calming color palette to the soothing soundscape, every element is carefully curated to create an environment that promotes relaxation and introspection. We want our guests to feel a sense of escape from the outside world the moment they step through our doors.</p>
@@ -322,7 +322,7 @@ function HomeScreen() {
                         </div>
                         <Image src={ifoLBottom} alt="right-bottom" className="img-fluid top-left" />
                     </Col>
-                    <Col xl={6} className="p-0">
+                    <Col xl={6} lg={6} className="p-0">
                         <Image src={footerTopImage} alt="visit Image" className="img-fluid visit-image" />
                         <Image src={ifoLBottom} alt="right-bottom" className="img-fluid right-bottom" />
                     </Col>
