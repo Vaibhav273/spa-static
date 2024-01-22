@@ -181,13 +181,13 @@ function ContactPage() {
                                             className="form-control"
                                         />
                                     </Col>
-                                    <Col xl={6} className="form-group">
+                                    <Col xl={6} className="mb-3">
                                         <input type="email" className="form-control" placeholder="Email" />
                                     </Col>
-                                    <Col xl={6} className="form-group">
+                                    <Col xl={6} className="mb-3">
                                         <input type="number" className="form-control" placeholder="Mobile No." />
                                     </Col>
-                                    <Col xl={12} className="form-group">
+                                    <Col xl={12} className="mb-3">
                                         <textarea rows={3} className="form-control" placeholder="Message"></textarea>
                                     </Col>
                                 </Row>

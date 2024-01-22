@@ -13,6 +13,7 @@
       border-radius: 2rem;
       font-family: $fontMontserrat;
       font-weight: 500;
+      color: $white;
 
       &::placeholder {
         color: $white;
@@ -23,7 +24,7 @@
       }
     }
     textarea {
-      margin-top: 1rem;
+      color: $white;
       background-color: transparent;
       border: 2px solid $white;
       padding: 1rem 2rem;

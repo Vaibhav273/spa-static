@@ -21,10 +21,12 @@
   }
 }
 
-@media (min-width: 1201px) and (max-width: 1200px) {}
+@media (min-width: 1201px) and (max-width: 1200px) {
+}
 
 //iPads, Tablets
-@media (min-width: 1025px) and (max-width: 1200px) {}
+@media (min-width: 1025px) and (max-width: 1200px) {
+}
 
 //iPads, Tablets
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -228,6 +230,23 @@
       }
     }
   }
+
+  .contact-us-section {
+    .form-section {
+      margin-top: 5rem;
+    }
+  }
+
+  .membership-section {
+    .form-section {
+      img {
+        &.right-bottom {
+          right: -1rem;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -301,6 +320,42 @@
 
     .visit-image {
       margin-top: 0;
+    }
+  }
+
+  .contact-us-section {
+    h4 {
+      font-size: 3rem;
+    }
+
+    .form-section {
+      margin-top: 5rem;
+      padding: 3rem 1rem 3rem;
+      img {
+        &.top-left {
+          width: 150px;
+          left: -1rem;
+          top: -3rem;
+          transform: rotate(360deg);
+        }
+        &.right-bottom {
+          width: 150px;
+          right: -0.5rem;
+          bottom: -3rem;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .membership-section {
+    .form-section {
+      img {
+        &.right-bottom {
+          right: -0.9rem;
+          transform: rotate(180deg);
+        }
+      }
     }
   }
 }
@@ -501,6 +556,42 @@
       }
     }
   }
+
+  .contact-us-section {
+    h4 {
+      font-size: 3rem;
+    }
+
+    .form-section {
+      margin-top: 5rem;
+      padding: 3rem 1rem 3rem;
+      img {
+        &.top-left {
+          width: 150px;
+          left: -1rem;
+          top: -3rem;
+          transform: rotate(360deg);
+        }
+        &.right-bottom {
+          width: 150px;
+          right: -0.5rem;
+          bottom: -3rem;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .membership-section {
+    .form-section {
+      img {
+        &.right-bottom {
+          right: -0.9rem;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -516,7 +607,6 @@
         font-size: 2rem;
         margin-bottom: 0;
       }
-
 
       .btn-custom {
         font-size: 0.9rem;
@@ -717,4 +807,48 @@
       }
     }
   }
+
+  // contact page
+  .contact-us-section {
+    h4 {
+      font-size: 3rem;
+    }
+
+    .form-section {
+      margin-top: 5rem;
+      padding: 3rem 1rem 3rem;
+      img {
+        &.top-left {
+          width: 150px;
+          left: -1rem;
+          top: -3rem;
+          transform: rotate(360deg);
+        }
+        &.right-bottom {
+          width: 150px;
+          right: -0.5rem;
+          bottom: -3rem;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .membership-section {
+    h4 {
+      font-size: 3rem;
+    }
+    .form-section {
+      img {
+        &.right-bottom {
+          right: -0.9rem;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+.story-section{
+  display: none;
 }

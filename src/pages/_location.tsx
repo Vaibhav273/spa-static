@@ -128,28 +128,28 @@ function LocationPage() {
                             <p className="mb-5">Our perfect craftsmanship of ancient therapies perfectly blended with the modern technology is serving the world today.</p>
                         </div>
                         <Row>
-                            <Col xl={2} lg={4} className="position-relative">
+                            <Col xl={2} lg={4} md={3} className="position-relative">
                                 <Image src={comingSoon} className="img-fluid coming-soon-image" alt="Coming Soon" />
                                 <p>DUBAI</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2} lg={4}>
+                            <Col xl={2} lg={4} md={3}>
                                 <p>DELHI</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2} lg={4}>
+                            <Col xl={2} lg={4} md={3}>
                                 <p>UDAIPUR</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2} lg={4}>
+                            <Col xl={2} lg={4} md={3}>
                                 <p>RAIPUR</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2} lg={4}>
+                            <Col xl={2} lg={4} md={3}>
                                 <p>BILASPUR</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2} lg={4}>
+                            <Col xl={2} lg={4} md={3}>
                                 <p>BHILAI</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
@@ -294,13 +294,13 @@ function LocationPage() {
                                             className="form-control"
                                         />
                                     </Col>
-                                    <Col xl={6} className="form-group">
+                                    <Col xl={6} className="mb-3">
                                         <input type="email" className="form-control" placeholder="Email" />
                                     </Col>
-                                    <Col xl={6} className="form-group">
+                                    <Col xl={6} className="mb-3">
                                         <input type="number" className="form-control" placeholder="Mobile No." />
                                     </Col>
-                                    <Col xl={12} className="form-group">
+                                    <Col xl={12} className="mb-3">
                                         <textarea rows={3} className="form-control" placeholder="Message"></textarea>
                                     </Col>
                                 </Row>

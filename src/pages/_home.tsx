@@ -227,11 +227,11 @@ function HomeScreen() {
 
             <Col xl={{ span: 10, offset: 1 }} lg={12} md={12} className="story-section">
                 <Row>
-                    <Col xl={7} lg={6} md={12} className="position-relative">
+                    <Col xl={6} lg={6} md={12} className="position-relative">
                         <Image src={storyImage} alt="right" className="img-fluid" />
                         <Image src={ifoRBottom} alt="left-top" className="img-fluid top-left" />
                     </Col>
-                    <Col xl={5} lg={6} md={12} className="story-content position-relative">
+                    <Col xl={6} lg={6} md={12} className="story-content position-relative">
                         <div className="story-text">
                             <h3>Our Story</h3>
                             <Image src={storyTextBottom} alt="right-bottom" className="img-fluid text-bottom" />

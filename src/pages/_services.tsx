@@ -66,9 +66,9 @@ function ServicePage() {
                         </Col>
                     </Row>
                 </Col>
-                <Col xl={12} className="customer-say-section">
+                <Col xl={12} lg={12} md={12} className="customer-say-section">
                     <Row>
-                        <Col xl={6} className="d-flex flex-column justify-content-center">
+                        <Col xl={6} lg={6} className="d-flex flex-column justify-content-center">
                             <div className="slider-testimonial">
                                 <h4>Here's what our customers say</h4>
                                 <Image src={storyTextBottom1} alt="right-bottom" className="img-fluid text-bottom" />
@@ -93,7 +93,7 @@ function ServicePage() {
                             </div>
                             <Image src={ifoLBottom} alt="right-bottom" className="img-fluid right-bottom" />
                         </Col>
-                        <Col xl={6} className="p-0">
+                        <Col xl={6} lg={6} className="p-0">
                             <Image src={customerImage} alt="Customer Image" className="img-fluid" />
                         </Col>
                     </Row>
@@ -111,28 +111,28 @@ function ServicePage() {
                             <p className="mb-5">Our perfect craftsmanship of ancient therapies perfectly blended with the modern technology is serving the world today.</p>
                         </div>
                         <Row>
-                            <Col xl={2} lg={4} className="position-relative">
+                            <Col xl={2} lg={4} md={3} className="position-relative">
                                 <Image src={comingSoon} className="img-fluid coming-soon-image" alt="Coming Soon" />
                                 <p>DUBAI</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2} lg={4}>
+                            <Col xl={2} lg={4} md={3}>
                                 <p>DELHI</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2} lg={4}>
+                            <Col xl={2} lg={4} md={3}>
                                 <p>UDAIPUR</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2} lg={4}>
+                            <Col xl={2} lg={4} md={3}>
                                 <p>RAIPUR</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2} lg={4}>
+                            <Col xl={2} lg={4} md={3}>
                                 <p>BILASPUR</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
-                            <Col xl={2} lg={4}>
+                            <Col xl={2} lg={4} md={3}>
                                 <p>BHILAI</p>
                                 <Link to="">Call Now <MdOutlineArrowRightAlt /></Link>
                             </Col>
@@ -140,6 +140,7 @@ function ServicePage() {
                     </Col>
                 </Row>
             </Col>
+
             <Col xl={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }} md={12} className="membership-section">
                 <Row>
                     <Col xl={6} lg={12} md={12}>
@@ -161,10 +162,10 @@ function ServicePage() {
                                             className="form-control"
                                         />
                                     </Col>
-                                    <Col xl={6} className="form-group">
+                                    <Col xl={6} className="mb-3">
                                         <input type="email" className="form-control" placeholder="Email" />
                                     </Col>
-                                    <Col xl={6} className="form-group">
+                                    <Col xl={6} className="mb-3">
                                         <input type="number" className="form-control" placeholder="Mobile No." />
                                     </Col>
                                 </Row>
@@ -177,16 +178,16 @@ function ServicePage() {
                     </Col>
                     <Col xl={6} lg={12} md={12}>
                         <div className="ps-4">
-                        <h4>Join Membership</h4>
-                        <p>Experience the ultimate legacy of rituals perfectly blended with the modern technology. Not just an ultimate luxury, a pamper routine.</p>
+                            <h4>Join Membership</h4>
+                            <p>Experience the ultimate legacy of rituals perfectly blended with the modern technology. Not just an ultimate luxury, a pamper routine.</p>
 
-                        <ul>
-                            <li><IoCheckmark /> Annual membership discounts.</li>
-                            <li><IoCheckmark /> Time-to-time care</li>
-                            <li><IoCheckmark /> All natural ingredients</li>
-                            <li><IoCheckmark /> Family Discounts</li>
-                            <li><IoCheckmark /> Routine massages</li>
-                        </ul>
+                            <ul>
+                                <li><IoCheckmark /> Annual membership discounts.</li>
+                                <li><IoCheckmark /> Time-to-time care</li>
+                                <li><IoCheckmark /> All natural ingredients</li>
+                                <li><IoCheckmark /> Family Discounts</li>
+                                <li><IoCheckmark /> Routine massages</li>
+                            </ul>
                         </div>
                     </Col>
                 </Row>

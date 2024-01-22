@@ -249,9 +249,9 @@
   .story-content {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    left: -5rem;
-    top: -3rem;
+    justify-content: flex-end;
+    padding: 0;
+    left: -2rem;
   }
 
   .story-text {

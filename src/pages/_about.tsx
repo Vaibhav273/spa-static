@@ -78,7 +78,7 @@ function AboutPage() {
                         </Col>
                         <Col xl={{ span: 8, offset: 2 }} lg={12} md={12}>
                             <Row>
-                                <Col xl={6} lg={6} className="content">
+                                <Col xl={6} lg={6} md={6} className="content">
                                     <Image src={spSCImage1} alt="left" className="img-fluid" />
                                     <Col xl={12} className="px-4">
                                         <div className="content-text">
@@ -88,7 +88,7 @@ function AboutPage() {
                                         </div>
                                     </Col>
                                 </Col>
-                                <Col xl={6} lg={6} className="content">
+                                <Col xl={6} lg={6} md={6} className="content">
                                     <Image src={spSCImage2} alt="left" className="img-fluid" />
                                     <Col xl={12} className="px-4">
                                         <div className="content-text">
@@ -100,9 +100,18 @@ function AboutPage() {
                                 </Col>
                             </Row>
                         </Col>
+                        {/* <Col xl={4} className="content">
+                        <Image src={spSCImage3} alt="right" className="img-fluid" />
+                        <Col xl={12} className="px-4">
+                            <div className="content-text">
+                                <h5>Shoulder Massage</h5>
+                                <p>Embark on a journey at Serene Shoulders, a retreat blending luxury and revitalization.</p>
+                                <Link to="">Book Today <MdOutlineArrowRightAlt /></Link>
+                            </div>
+                        </Col>
+                    </Col> */}
                     </Row>
                 </Col>
-
             </div>
             <Col xl={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }} md={12} className="specialist-section">
                 <Row>
